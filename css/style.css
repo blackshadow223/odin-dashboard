@@ -44,9 +44,41 @@ a:visited {
     color: var(--secondary-color);
     background-color: var(--primary-color);
 
+    font-weight: 700;
+
     padding: 16px;
 }
 
 .sidebar svg {
     fill: var(--secondary-color);
+}
+
+.sidebar-title {
+    font-size: 18px;
+}
+
+.sidebar-title,
+.sidebar-link {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    gap: 4px;
+}
+
+.sidebar-title > svg,
+.sidebar-link > svg {
+    justify-self: center;
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.sidebar-menu,
+.sidebar-options {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
