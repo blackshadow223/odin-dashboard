@@ -1,4 +1,11 @@
 
+/* CSS Custom Properties, i.e, Variables */
+:root {
+    --primary-color: #1c93d2;
+    --secondary-color: #e3eaf1;
+}
+
+
 /* General Styles */
 *,
 *::before,
@@ -13,6 +20,13 @@ body {
     height: 100%;
 }
 
+a:link,
+a:hover,
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
 
 /* Dashboard Styles */
 .container {
@@ -20,4 +34,19 @@ body {
     grid-template-columns: 1fr 5fr;
 
     height: 100%;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+
+    padding: 16px;
+}
+
+.sidebar svg {
+    fill: var(--secondary-color);
 }
