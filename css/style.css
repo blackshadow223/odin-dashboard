@@ -18,6 +18,7 @@
 html,
 body {
     height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 a:link,
@@ -50,11 +51,18 @@ a:visited {
 }
 
 .sidebar svg {
+    width: 18px;
+    height: auto;
     fill: var(--secondary-color);
 }
 
 .sidebar-title {
     font-size: 18px;
+}
+
+.sidebar-title > svg {
+    width: 32px;
+    height: auto;
 }
 
 .sidebar-title,
@@ -80,5 +88,5 @@ a:visited {
 .sidebar-options {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
 }
