@@ -37,6 +37,11 @@ a:visited {
     height: 100%;
 }
 
+.container svg {
+    width: 18px;
+    height: auto;
+}
+
 .sidebar {
     display: flex;
     flex-direction: column;
@@ -51,8 +56,6 @@ a:visited {
 }
 
 .sidebar svg {
-    width: 18px;
-    height: auto;
     fill: var(--secondary-color);
 }
 
@@ -62,7 +65,6 @@ a:visited {
 
 .sidebar-title > svg {
     width: 32px;
-    height: auto;
 }
 
 .sidebar-title,
