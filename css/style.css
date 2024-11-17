@@ -6,6 +6,7 @@
 :root {
     --primary-color: #1c93d2;
     --secondary-color: #e3eaf1;
+    --tertiary-color: #e1e8f0;
 }
 
 
@@ -114,9 +115,71 @@ button {
 
     display: grid;
     grid-template: 1fr 2fr / 2fr 1fr;
+    row-gap: 16px;
 
     font-weight: 700;
     padding: 16px 32px;
+    box-shadow: 2px 2px 2px 2px black; /* Under construction */
+}
+
+.header > * {
+    display: flex;
+}
+
+.head-search {
+    align-items: center;
+}
+
+.head-search > label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 8px;
+}
+
+.head-search > input[type="search"] {
+    max-width: 80%;
+    height: 24px;
+
+    background-color: var(--tertiary-color);
+    font-size: 16px;
+    border-style: none;
+    border-radius: 16px;
+
+    flex: 1;
+}
+
+.head-profile-small {
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.head-profile-large {
+    align-items: center;
+    gap: 16px;
+
+    padding: 0 16px;
+}
+
+.profile-name-large {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.profile-name-large > :first-child {
+    font-size: 12px;
+}
+
+.profile-name-large > :last-child {
+    font-size: 18px;
+}
+
+.head-action {
+    align-items: center;
+    gap: 16px;
 }
 
 .profile-image-small,
@@ -125,6 +188,8 @@ button {
     height: 32px;
     border: 1px solid black;
     border-radius: 50%;
+
+    flex-shrink: 0;
 }
 
 .button {
@@ -142,4 +207,6 @@ button {
 
 .main {
     grid-area: main;
+
+    background-color: var(--tertiary-color);
 }
