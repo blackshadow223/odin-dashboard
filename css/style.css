@@ -170,14 +170,6 @@ button {
     gap: 4px;
 }
 
-.profile-name-large > :first-child {
-    font-size: 12px;
-}
-
-.profile-name-large > :last-child {
-    font-size: 18px;
-}
-
 .head-action {
     align-items: center;
     justify-content: center;
