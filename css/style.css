@@ -34,7 +34,7 @@ a:visited {
 
 button {
     border-style: none;
-    padding: 8px 24px;
+    padding: 10px 32px;
     cursor: pointer;
 }
 
@@ -42,7 +42,7 @@ button {
 /* Dashboard Styles */
 .container {
     display: grid;
-    grid-template: 1fr 5fr / 1fr 5fr;
+    grid-template: 1fr 4fr / 1fr 4fr;
     grid-template-areas:
         "sidebar header"
         "sidebar   main";
@@ -51,7 +51,7 @@ button {
 }
 
 .container svg {
-    width: 18px;
+    width: 24px;
     height: auto;
 }
 
@@ -61,26 +61,27 @@ button {
 
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 48px;
 
-    color: var(--secondary-color);
+    color: white;
     background-color: var(--primary-color);
 
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 600;
 
     padding: 16px;
 }
 
 .sidebar svg {
-    fill: var(--secondary-color);
+    fill: white;
 }
 
 .sidebar-title {
-    font-size: 18px;
+    font-size: 26px;
 }
 
 .sidebar-title > svg {
-    width: 32px;
+    width: 46px;
 }
 
 .sidebar-title,
@@ -88,7 +89,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 4fr;
     align-items: center;
-    gap: 4px;
+    gap: 12px;
 }
 
 .sidebar-title > svg,
@@ -99,14 +100,14 @@ button {
 .sidebar-links {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    gap: 72px;
 }
 
 .sidebar-menu,
 .sidebar-options {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 24px;
 }
 
 
@@ -115,10 +116,10 @@ button {
 
     display: grid;
     grid-template: 1fr 2fr / 2fr 1fr;
-    row-gap: 16px;
+    gap: 8px 16px;
 
     font-weight: 700;
-    padding: 16px;
+    padding: 16px 16px 0px;
     box-shadow: 4px 4px 8px rgb(200, 200, 200);
     z-index: 1;
 }
@@ -136,12 +137,11 @@ button {
     justify-content: center;
     align-items: center;
 
-    padding: 8px;
+    padding: 8px 16px;
 }
 
 .head-search > input[type="search"] {
-    max-width: 80%;
-    height: 24px;
+    height: 28px;
 
     background-color: var(--tertiary-color);
     font-size: 16px;
@@ -153,8 +153,9 @@ button {
 
 .head-profile-small {
     align-items: center;
-    justify-content: center;
-    gap: 24px;
+    justify-content: flex-end;
+    gap: 32px;
+    padding: 0 48px;
 }
 
 .head-profile-large {
@@ -172,30 +173,31 @@ button {
 
 .head-action {
     align-items: center;
-    justify-content: center;
-    gap: 16px;
+    gap: 24px;
+    padding: 0 16px;
 }
 
 .profile-image-small,
 .profile-image-large {
-    width: 32px;
-    height: 32px;
+    width: 48px;
+    height: 48px;
     border: 1px solid black;
     border-radius: 50%;
 
     flex-shrink: 0;
 }
 
-.button {
-    color: var(--secondary-color);
-    background-color: var(--primary-color);
-    border-radius: 16px;
-    font-weight: inherit;
-}
-
 .profile-image-large {
     width: 64px;
     height: 64px;
+}
+
+.button {
+    color: white;
+    background-color: var(--primary-color);
+    border-radius: 24px;
+    font-size: 15px;
+    font-weight: inherit;
 }
 
 
