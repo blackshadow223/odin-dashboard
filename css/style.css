@@ -6,6 +6,7 @@
 :root {
     --primary-color: #1c93d2;
     --secondary-color: #e1e8f0;
+    --tertiary-color: #f0b32a;
 }
 
 
@@ -211,7 +212,7 @@ button {
     gap: 16px;
 
     background-color: var(--secondary-color);
-    padding: 24px 16px;
+    padding: 32px 16px;
 }
 
 .projects {
@@ -222,16 +223,39 @@ button {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 32px;
-    padding: 16px 0;
+    padding: 12px 0;
 }
 
 .card {
+    display: grid;
+    grid-template: repeat(2, min-content) / 1fr;
+    gap: 4px;
+
     height: 200px;
     background-color: white;
+    border-left: 8px solid var(--tertiary-color);
+    border-radius: 8px;
+    padding: 32px 16px;
 }
 
 .card > p {
+    color: #767676;
     font-size: 14px;
+    font-weight: 500;
+}
+
+.card-footer > svg {
+    fill: rgb(50, 50, 50);
+}
+
+.card-footer {
+    align-self: end;
+    justify-self: end;
+
+    display: flex;
+    gap: 24px;
+
+    padding: 0 16px;
 }
 
 .announcements {
