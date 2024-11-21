@@ -203,5 +203,41 @@ button {
 .main {
     grid-area: main;
 
+    display: grid;
+    grid-template: 1fr 1fr / 3fr 1fr;
+    grid-template-areas: 
+        "projects announce"
+        "projects trending";
+    gap: 16px;
+
     background-color: var(--secondary-color);
+    padding: 24px 16px;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 32px;
+    padding: 16px 0;
+}
+
+.card {
+    height: 200px;
+    background-color: white;
+}
+
+.card > p {
+    font-size: 12px;
+}
+
+.announcements {
+    grid-area: announce;
+}
+
+.trending {
+    grid-area: trending;
 }
