@@ -242,7 +242,8 @@ button {
 }
 
 .card-body,
-.news-body {
+.news-body,
+.trending-profile p {
     color: #767676;
     font-size: 14px;
     font-weight: 500;
@@ -270,7 +271,8 @@ button {
     gap: 12px;
 }
 
-.news-container {
+.news-container,
+.trending-container {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -294,4 +296,18 @@ button {
 
 .trending {
     grid-area: trending;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.trending-container {
+    padding: 24px;
+}
+
+.trending-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
