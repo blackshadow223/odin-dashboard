@@ -210,7 +210,7 @@ button {
     grid-template-areas: 
         "projects announce"
         "projects trending";
-    gap: 16px;
+    gap: 32px 24px;
 
     background-color: var(--secondary-color);
     padding: 32px 16px;
@@ -238,7 +238,7 @@ button {
     border-radius: 8px;
     padding: 32px 16px;
 
-    box-shadow: 2px 3px 4px lightgrey;
+    box-shadow: 2px 3px 4px 2px lightgrey;
 }
 
 .card-body,
@@ -264,10 +264,32 @@ button {
 
 .announcements {
     grid-area: announce;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    background-color: white;
+    border-radius: 8px;
+    padding: 32px;
+
+    box-shadow: 2px 3px 4px 2px lightgrey;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
 }
 
 .news-body {
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .trending {
