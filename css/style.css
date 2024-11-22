@@ -241,7 +241,8 @@ button {
     box-shadow: 2px 3px 4px lightgrey;
 }
 
-.card > p {
+.card-body,
+.news-body {
     color: #767676;
     font-size: 14px;
     font-weight: 500;
@@ -263,6 +264,10 @@ button {
 
 .announcements {
     grid-area: announce;
+}
+
+.news-body {
+    font-size: 12px;
 }
 
 .trending {
